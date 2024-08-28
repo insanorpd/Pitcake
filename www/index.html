@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="lib/framework7-bundle.min.css">
     <!-- CSS PERSONALIZADO PARA MENU-->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/receitas.css">
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
     <!--icones do remixicons-->
@@ -31,21 +32,21 @@
         <div class="view view-main">
 
             <!-- TAB BAR-->
-            <div class="toolbar toolbar-bottom">
+            <div id="menuPrincipal" class="toolbar toolbar-bottom">
                 <div class="toolbar-inner display-flex">
                     <a href="/index/" class="tab-link link active">
                         <i class="ri-home-4-line"></i>
                         <span>Home</span>
                     </a>
-                    <a href="/link2/" class="tab-link link">
+                    <a href="/busca/" class="tab-link link">
                         <i class="ri-search-2-line"></i>
                         <span>Busca</span>
                     </a>
-                    <a href="/link3/" class="tab-link link">
+                    <a href="/favoritos/" class="tab-link link">
                         <i class="ri-heart-3-line"></i>
                         <span>Favoritos</span>
                     </a>
-                    <a href="/link4/" class="tab-link link">
+                    <a href="/conta/" class="tab-link link">
                         <i class="ri-account-circle-line"></i>
                         <span>Conta</span>
                     </a>
@@ -165,12 +166,11 @@
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
-
                         <div id="Produtos" class="row display flex align-items-center justify-content-start"></div>
                             <!--ITEM CARD-->
                             <div class="items-container">
                                 <div class="item-card">
-                                    <a href="#" class="item">
+                                    <a href="/receitas/" class="item">
                                         <div class="img-container">
                                             <img class="margin-top" src="img/cupcake1.png" alt="Cupcake Chocolate">
                                         </div>
@@ -223,15 +223,9 @@
                                                 <span class="bold margin-right">4.0</span>
                                             </span>                                   
                                         </div>
-                                    </a>
-                                </div>
-                                    </a>
-                                </div>
+                                    </a>                   
+                                <div>
                             </div>
-                            
-                        </a>
-                                </div>
-                            </a>
                         </div>
                     </div>
                 </div>

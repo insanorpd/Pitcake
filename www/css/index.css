@@ -10,7 +10,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-body{
+body {
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -173,8 +173,8 @@ input[type="text"]{
     height: 100%;
     background: #fff;
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;    
+    border: 1px
 }
 
 .img-container {
@@ -183,6 +183,7 @@ input[type="text"]{
         align-items: center;
         margin-bottom: 10px;
         overflow: hidden;   
+        text-align: center;
     }
 
 .img-container img{
@@ -197,22 +198,10 @@ input[type="text"]{
     background: var(--gelo);
 }
 
-.nome-rating{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-    flex-direction:column;
-    align-items: center;
-}
-
 .color-gray {
     color: gray;
     font-size: 16px;
     margin-bottom: 5px;
-}
-
-.mdi-star{
-    color: orange;
 }
 
 .bold{
@@ -226,19 +215,11 @@ input[type="text"]{
     }
 }
 
-.rating {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
 .items-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-    align-items: start;
-    padding: 20px;
+    align-items: baseline;
+    gap: 10px;
 }
 
 .rating i {
@@ -246,9 +227,27 @@ input[type="text"]{
     margin-right: 5px;
 }
 
-.product-info {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    margin-top: 10px; 
+.mdi-star {
+    color: orange;
+    margin-right: 5px;
 }
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-info {
+    margin-top: 10px;
+    text-align: center;
+}
+
