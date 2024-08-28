@@ -43,7 +43,7 @@ var app = new Framework7({
             spaceBetween: 30
           },
           640:{
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 30
           },
           992:{
@@ -53,6 +53,28 @@ var app = new Framework7({
           1200:{
             slidesPerView: 4,
             spaceBetween: 30
+          },
+        }
+      });
+      var swiper2 = new Swiper(".Receitas", {
+        slidesPerView: 3,
+        spaceBetween: 5,
+        breakpoints:{
+          50:{
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          640:{
+            slidesPerView: 4,
+            spaceBetween: 10
+          },
+          992:{
+            slidesPerView: 8,
+            spaceBetween: 10
+          },
+          1200:{
+            slidesPerView: 12,
+            spaceBetween: 10
           },
         }
       });
