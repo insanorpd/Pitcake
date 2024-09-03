@@ -60,15 +60,15 @@ var app = new Framework7({
         }
       });
       var swiper2 = new Swiper(".Receitas", {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 5,
         breakpoints:{
           50:{
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 10
           },
           640:{
-            slidesPerView: 4,
+            slidesPerView: 6,
             spaceBetween: 10
           },
           992:{
