@@ -202,10 +202,9 @@ input[type="text"]{
     justify-content: flex-start;
     height: 100%;
     background: #d6c9ed; /*fff*/
-    padding: 10px;
+    padding-bottom: 5px;
     border-radius: 20px;    
     border: 1px;
-    margin-top: 15px;
 }
 
 .img-container {
@@ -251,6 +250,7 @@ input[type="text"]{
     grid-template-columns: repeat(2, 1fr); 
     align-items: baseline;
     gap: 10px;
+    row-gap: 15px; 
 }
 
 .mdi-star {
@@ -279,7 +279,6 @@ input[type="text"]{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5px;
 }
 img {
     max-width: 100%;
@@ -293,3 +292,8 @@ img {
     text-align: center;
 }
 
+.resto-da-pagina{    
+    margin-top: 110px;
+    margin-bottom: 110px;
+    /*background: red; */
+}
