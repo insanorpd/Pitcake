@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Template Tab</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/receitas.css">
+    <link rel="stylesheet" href="css/cupcakes_receitas.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <!--icones do remixicons-->
+    <link rel="stylesheet" href="css/remixicon/remixicon.css">
+
+</head>
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+            <!-- TAB BAR BOTTOM - Barra de menu que fica na parte inferior da tela -->
+            <div id="menuPrincipal" class="toolbar toolbar-bottom">
+                <div class="toolbar-inner display-flex">
+                    <a href="/index/" class="tab-link link active">
+                        <i class="ri-home-2-line"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="/busca/" class="tab-link link">
+                        <i class="ri-search-line"></i>
+                        <span>Busca</span>
+                    </a>
+                    <a href="/favoritos/" class="tab-link link">
+                        <i class="ri-heart-3-line"></i>
+                        <span>Favoritos</span>
+                    </a>
+                    <a href="/conta/" class="tab-link link">
+                        <i class="ri-account-circle-line"></i>
+                        <span>Conta</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page color-theme-blue">
+
+                <!--NAV TOPO - titulo e Botão de pesquisa-->
+                <div class="top-nav">
+                    <h1 class="tittle-Logo"><span>Pit</span>Cake</h1>
+                    <a href="#" class="link popover-open menutoolbar" data-popover=".popover-menu">
+                        <i class="ri-menu-line"></i>
+                    </a>
+                </div>
+
+                <!-- MENU POPOVER - botão superior para exibição de Menus  -->
+                <div class="popover popover-menu">
+                    <div class="popover-angle"></div>
+                    <div class="popover-inner">
+                      <div class="list">
+                        <ul>
+                          <li><a href="#" class="list-button popover-close">Item 1</a></li>
+                          <li><a href="#" class="list-button popover-close">Item 2</a></li>
+                          <li><a href="#" class="list-button popover-close">Item 3</a></li>
+                          <li><a href="#" class="list-button popover-close">Item 4</a></li>
+                          <li><a href="#" class="list-button popover-close">Item 5</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                <form>
+                    <input placeholder="O que você procura?" type="text">
+                    <i class="icone-busca ri-search-line"></i>
+
+                </form>                  
+
+                <!-- Swipper automático de icones -->
+                <div class="page-content">
+                    <div class="block no-margin-top">
+                         <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/tela.png"></div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/cupcakenew1.png"></div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/cupcakenew2.png"></div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/cupcakenew3.png"></div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/cupcakenew4.png"></div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/cupcakenew5.png"></div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/cupcakenew6.png"></div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/cupcakenew7.png"></div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/cupcakenew8.png"></div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/cupcakenew9.png"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="display-flex align-items-center justify-content-space-between">
+                            <h2>Receitas Cupcake</h2>
+                            <a href="#">Veja todas <i class="mdi mdi-arrow-right"></i></a>        
+                        </div>
+
+
+                        <!-- Swiper de categorias - Receitas Cupcakes -->
+                        <div class="swiper Receitas">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <button class="filter-btn active">
+                                        Todas
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">
+                                        Baunilla
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">
+                                        Chocolate
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">
+                                        Morango
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">
+                                        Cenoura
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">
+                                        Limão
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">
+                                        Oreo
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">
+                                        Nutella
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">
+                                        Café
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">
+                                        Menta
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">
+                                        Abobora
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">
+                                        Frutas
+                                    </button>
+                                </div>                                                                        
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div id="Produtos" class="margin-top display flex align-items-center justify-content-start"></div>
+
+
+
+                        <!--ITEM CARD - Cupcakes para clicar e ver as receitas -->
+                            <!--ITEM CARD - Cupcakes de Chocolate -->
+                        <div class="items-container">
+                            <div class="item-card">
+                                <a href="/receitas/" class="item">
+                                    <div class="img-container">
+                                        <img class="margin-top" src="img/cupcake1.png" alt="Cupcake Chocolate">
+                                    </div>
+                                    <div class="product-info">
+                                        <span class="color-gray">Cupcake de Chocolate</span>                                     
+                                    </div>
+                                </a>
+                                <span class="rating">
+                                    <a href="#" class="favorite">             <!-- Futuro Botão de favoritar -->
+                                        <i class="ri-heart-3-line fav-heart"></i>
+                                    </a>
+                                    <i class="mdi mdi-star"></i>
+                                    <span class="bold">4.8</span>
+                                </span> 
+                            </div>    
+                            
+                            <!--ITEM CARD - Cupcakes de Morango -->
+                            <div class="item-card">
+                                <a href="/ccmorango/" class="item">
+                                    <div class="img-container">
+                                        <img class="margin-top" src="img/cupcake2.png" alt="Cupcake Morango">
+                                    </div>
+                                    <div class="product-info">
+                                        <span class="color-gray">Cupcake de Morango</span>                                  
+                                    </div>
+                                </a>
+                                <span class="rating">
+                                    <a href="#" class="favorite">             <!-- Futuro Botão de favoritar -->
+                                        <i class="ri-heart-3-line fav-heart"></i>
+                                    </a>
+                                    <i class="mdi mdi-star"></i>
+                                    <span class="bold">4.5</span>
+                                </span> 
+                            </div>
+
+                            <!--ITEM CARD - Cupcakes de Baunilha -->
+                            <div class="item-card">
+                                <a href="/ccbaunilha/" class="item">
+                                    <div class="img-container">
+                                        <img class="margin-top" src="img/cupcake3.png" alt="Cupcake Baunilla">
+                                    </div>
+                                    <div class="product-info">
+                                        <span class="color-gray">Cupcake de Baunilha</span>                                 
+                                    </div>
+                                </a>
+                                <span class="rating">
+                                    <a href="#" class="favorite">             <!-- Futuro Botão de favoritar -->
+                                        <i class="ri-heart-3-line fav-heart"></i>
+                                    </a>
+                                    <i class="mdi mdi-star"></i>
+                                    <span class="bold">4.2</span>
+                                </span>  
+                            </div>
+
+                            <!--ITEM CARD - Cupcakes de Menta -->
+                            <div class="item-card">
+                                <a href="/ccmenta/" class="item">
+                                    <div class="img-container">
+                                        <img class="margin-top" src="img/cupcake4.png" alt="Cupcake Menta">
+                                    </div>
+                                    <div class="product-info">
+                                        <span class="color-gray">Cupcake de Menta (Em construção)</span>                                   
+                                    </div>
+                                </a> 
+                                <span class="rating">
+                                    <a href="#" class="favorite">             <!-- Futuro Botão de favoritar -->
+                                        <i class="ri-heart-3-line fav-heart"></i>
+                                    </a>
+                                    <i class="mdi mdi-star"></i>
+                                    <span class="bold">4.0</span>
+                                </span>                   
+                            </div>
+
+                            <!--ITEM CARD - Cupcakes de Brigadeiro -->
+                            <div class="item-card">
+                                <a href="/ccbrigadeiro/" class="item">
+                                    <div class="img-container">
+                                        <img class="margin-top" src="img/cupcake5.png" alt="Cupcake Menta">
+                                    </div>
+                                    <div class="product-info">
+                                        <span class="color-gray">Cupcake de Brigadeiro (Em construção)</span>                                   
+                                    </div>
+                                </a> 
+                                <span class="rating">
+                                    <a href="#" class="favorite">             <!-- Futuro Botão de favoritar -->
+                                        <i class="ri-heart-3-line fav-heart"></i>
+                                    </a>
+                                    <i class="mdi mdi-star"></i>
+                                    <span class="bold">5.0</span>
+                                </span>                   
+                            </div>
+
+                            <!--ITEM CARD - Cupcakes de BlueBerry -->
+                            <div class="item-card">
+                                <a href="#" class="item">
+                                    <div class="img-container">
+                                        <img class="margin-top" src="img/cupcake8.png" alt="Cupcake Menta">
+                                    </div>
+                                    <div class="product-info">
+                                        <span class="color-gray">Cupcake de Blueberry (Em construção)</span>                                   
+                                    </div>
+                                </a> 
+                                <span class="rating">
+                                    <a href="#" class="favorite">             <!-- Futuro Botão de favoritar -->
+                                        <i class="ri-heart-3-line fav-heart"></i>
+                                    </a>
+                                    <i class="mdi mdi-star"></i>
+                                    <span class="bold">1.4</span>
+                                </span>                   
+                            </div>
+                        </div> <!--Fim do ITEM CARD -->
+                        <div class="resto-da-pagina"> _ </div> <!-- Margem na parte de baixo para exibir o resto da pagina -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+</html>
