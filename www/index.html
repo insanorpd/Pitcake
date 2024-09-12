@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/receitas.css">
     <link rel="stylesheet" href="css/cupcakes_receitas.css">
+    <link rel="stylesheet" href="css/login.css">
+
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
     <!--icones do remixicons-->
@@ -59,10 +61,27 @@
                 <!--NAV TOPO - titulo e Botão de pesquisa-->
                 <div class="top-nav">
                     <h1 class="tittle-Logo"><span>Pit</span>Cake</h1>
-                    <a href="#" class="menutoolbar">
+                    <a href="#" class="link popover-open menutoolbar" data-popover=".popover-menu">
                         <i class="ri-menu-line"></i>
                     </a>
                 </div>
+
+                <!-- MENU POPOVER - botão superior para exibição de Menus  -->
+                <div class="popover popover-menu">
+                    <div class="popover-angle"></div>
+                    <div class="popover-inner">
+                      <div class="list">
+                        <ul>
+                          <li><a href="#" class="list-button popover-close">Item 1</a></li>
+                          <li><a href="#" class="list-button popover-close">Item 2</a></li>
+                          <li><a href="#" class="list-button popover-close">Item 3</a></li>
+                          <li><a href="#" class="list-button popover-close">Item 4</a></li>
+                          <li><a href="#" class="list-button popover-close">Item 5</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
                 <form>
                     <input placeholder="O que você procura?" type="text">
                     <i class="icone-busca ri-search-line"></i>
