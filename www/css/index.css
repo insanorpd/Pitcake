@@ -118,7 +118,8 @@ input[type="text"]{
     padding: 0; /* Remove preenchimento padrão */
 }
 .page-content2{
-    background-image: url('../img/Background02.png');
+    background: #93EB84;
+    /*background-image: url('../img/Background02.png'); */
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-repeat: no-repeat; /* Não repete a imagem */
     background-position: center; /* Centraliza a imagem */

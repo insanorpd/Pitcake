@@ -147,7 +147,9 @@ var app = new Framework7({
     {
       path: '/ccchocolate/',
       url: 'ccchocolate.html',
-      animate: false,
+      options: {
+        transition: 'f7-cover-v',
+      },
 	  on: {
 		pageBeforeIn: function (event, page) {
 		// fazer algo antes da página ser exibida
@@ -167,7 +169,9 @@ var app = new Framework7({
     {
       path: '/ccmorango/',
       url: 'ccmorango.html',
-      animate: false,
+      options: {
+        transition: 'f7-cover-v',
+      },
 	  on: {
 		pageBeforeIn: function (event, page) {
 		// fazer algo antes da página ser exibida
@@ -187,7 +191,9 @@ var app = new Framework7({
     {
       path: '/ccbaunilha/',
       url: 'ccbaunilha.html',
-      animate: false,
+      options: {
+        transition: 'f7-cover-v',
+      },
 	  on: {
 		pageBeforeIn: function (event, page) {
 		// fazer algo antes da página ser exibida
@@ -207,7 +213,9 @@ var app = new Framework7({
     {
       path: '/ccmenta/',
       url: 'ccmenta.html',
-      animate: false,
+      options: {
+        transition: 'f7-cover-v',
+      },
 	  on: {
 		pageBeforeIn: function (event, page) {
 		// fazer algo antes da página ser exibida
@@ -227,7 +235,9 @@ var app = new Framework7({
     {
       path: '/ccbrigadeiro/',
       url: 'ccbrigadeiro.html',
-      animate: false,
+      options: {
+        transition: 'f7-cover-v',
+      },
 	  on: {
 		pageBeforeIn: function (event, page) {
 		// fazer algo antes da página ser exibida
