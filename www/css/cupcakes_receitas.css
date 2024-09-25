@@ -1,0 +1,57 @@
+.container-receita h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #444;
+    text-align: center;
+}
+
+.container-receita h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #555;
+    text-align: center;
+}
+
+.container-receita ul, .container-receita ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.container-receita ul li, .container-receita ol li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+.container-receita p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container-receita {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8fbfa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-receita h2, .container-receita h3, .container-receita p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container-receita ul, .container-receita ol {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.prod-content{
+    background: none;
+}
+.prod-detail{
+    background: #f8fbfa;
+}

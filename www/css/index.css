@@ -193,6 +193,9 @@ input[type="text"]{
 .item{
     border-radius: 20px;
     color: var(--preto);
+    /*background:  yellow;*/
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .item-card {
@@ -215,6 +218,7 @@ input[type="text"]{
         margin-bottom: 10px;
         overflow: hidden;   
         text-align: center;
+        /*background: blue; */
     }
 
 .img-container img{
@@ -291,6 +295,7 @@ img {
 .product-info {
     margin-top: 10px;
     text-align: center;
+    /*background: greenyellow; */
 }
 
 .resto-da-pagina{    
