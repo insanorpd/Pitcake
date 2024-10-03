@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+
+
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="conta" class="page">
+                <!-- Scrollable page content -->
+                <div class="page-content2">
+
+                    <div class="buttons-top-c">
+                        <a href="/index/"><i class="ri-arrow-left-s-line"></i></a>
+                        </div>
+
+                        <!-- MENU POPOVER - botão superior para exibição de Menus  -->
+                        <div class="popover popover-menu">
+                            <div class="popover-angle"></div>
+                            <div class="popover-inner">
+                            <div class="list">
+                                
+                                <ul class="text-align-center">
+                                    <h3>Escolha um icone: </h3>
+                                <li><a href="#" class="list-button popover-close"><img src="img/Icon_02.png" class="change-icon"></a></li>
+                                <li><a href="#" class="list-button popover-close"><img src="img/Icon_03.png" class="change-icon"></a></li>
+                                <li><a href="#" class="list-button popover-close"><img src="img/Icon_04.png" class="change-icon"></a></li>
+                                <li><a href="#" class="list-button popover-close"><img src="img/Icon_05.png" class="change-icon"></a></li>
+                                <li><a href="#" class="list-button popover-close"><img src="img/Icon_06.png" class="change-icon"></a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>    
+
+
+                    <div class="c_icon">
+                        <a href="#" class="link popover-open menutoolbar" data-popover=".popover-menu">
+                            <img src="img/Icon_01.png">
+                        </a>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="div-campo">
+                                <div class="div-campo-b">
+                                    <span class="txt-info">NOME DE USUÁRIO</span>
+                                </div>
+                                <input class="campo-txt" type="text">
+                            </div>
+                            <div class="div-campo">
+                                <div class="div-campo-b">
+                                    <span class="txt-info">E-MAIL</span>
+                                </div>
+                                <input class="campo-txt" type="email">
+                            </div>
+                            <div class="div-campo">
+                                <div class="div-campo-b">
+                                    <span class="txt-info">SENHA</span>
+                                </div>
+                                <input class="campo-txt" type="password">
+                            </div>
+                            <div class="div-campo">
+                                <div class="div-campo-b">
+                                    <span class="txt-info">CONFORME SUA SENHA</span>
+                                </div>
+                                <input class="campo-txt" type="password">
+                            </div>
+                            <div class="div-campo">
+                                <div class="div-campo-b">
+                                    <span class="txt-info">RESPOSTA DE SEGURANÇA</span>
+                                </div>
+                                <input class="campo-txt" type="text">
+                            </div>
+                            <div class="div-campo">
+                                <div class="div-campo-b">
+                                    <input type="checkbox"> <span class="termos-cb">Li e concordo com os Termos de Privacidade. </span> 
+                                </div>
+                            </div> 
+                        </form> 
+                        <div class="btn-criar-conta">
+                            <button class="btn-criar-conta-btn">
+                                Criar Cadastro
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>

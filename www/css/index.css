@@ -80,14 +80,14 @@ a {
 
 }
 
-form{
+.f-search{
     padding-top: 10px;
     background: var(--branco);
     padding-bottom: 20px;
     position: relative;
 }
 
-input[type="text"]{
+.f-busca[type="text"]{
     width: 90%;
     height: 45px;
     border-radius: 10px;
