@@ -169,6 +169,15 @@
     background: #d9ffd0;
     white-space: nowrap;
 }
+.btn-excluir-conta-btn{
+    width: 130px;
+    height: 35px;
+    border: 2px solid var(--preto);
+    border-radius: 10px;
+    margin-left: 150px;
+    background: #ff9999;
+    white-space: nowrap;
+}
 .change-icon{
     width: 80px;
     margin-top: 2px;
