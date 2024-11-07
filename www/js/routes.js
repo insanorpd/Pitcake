@@ -88,8 +88,8 @@ const app = new Framework7({
 	  }
     },
     {
-      path: '/criar/',
-      url: 'criar-receita.html',
+      path: '/busca/',
+      url: 'busca.html',
       animate: false,
 	  on: {
 		pageBeforeIn: function (event, page) {
@@ -132,7 +132,6 @@ const app = new Framework7({
 	  on: {
 		pageBeforeIn: function (event, page) {
 		// fazer algo antes da página ser exibida
-    $("#menuPrincipal").hide("fast");
 		},
 		pageAfterIn: function (event, page) {
 		// fazer algo depois da página ser exibida
@@ -146,8 +145,8 @@ const app = new Framework7({
 	  }
     },
     {
-      path: '/receitas/',
-      url: 'receitas.html',
+      path: '/ccchocolate/',
+      url: 'ccchocolate.html',
       options: {
         transition: 'f7-cover-v',
       },
@@ -168,8 +167,8 @@ const app = new Framework7({
 	  }
     },
     {
-      path: '/criar-cadastro/',
-      url: 'conta-cadastro.html',
+      path: '/ccmorango/',
+      url: 'ccmorango.html',
       options: {
         transition: 'f7-cover-v',
       },
@@ -190,8 +189,8 @@ const app = new Framework7({
 	  }
     },
     {
-      path: '/fazer-login/',
-      url: 'conta-login.html',
+      path: '/ccbaunilla/',
+      url: 'ccbaunilla.html',
       options: {
         transition: 'f7-cover-v',
       },
@@ -212,8 +211,8 @@ const app = new Framework7({
 	  }
     },
     {
-      path: '/editar-perfil/',
-      url: 'menu-editar-perfil.html',
+      path: '/ccmenta/',
+      url: 'ccmenta.html',
       options: {
         transition: 'f7-cover-v',
       },
@@ -234,8 +233,30 @@ const app = new Framework7({
 	  }
     },
     {
-      path: '/excluir-perfil/',
-      url: 'menu-excluir-perfil.html',
+      path: '/ccbrigadeiro/',
+      url: 'ccbrigadeiro.html',
+      options: {
+        transition: 'f7-cover-v',
+      },
+	  on: {
+		pageBeforeIn: function (event, page) {
+		// fazer algo antes da página ser exibida
+    $("#menuPrincipal").hide("fast");
+		},
+		pageAfterIn: function (event, page) {
+		// fazer algo depois da página ser exibida
+		},
+		pageInit: function (event, page) {
+		// fazer algo quando a página for inicializada
+		},
+		pageBeforeRemove: function (event, page) {
+		// fazer algo antes da página ser removida do DOM
+		},
+	  }
+    },
+    {
+      path: '/ccblueberry/',
+      url: 'ccblueberry.html',
       options: {
         transition: 'f7-cover-v',
       },
@@ -306,3 +327,4 @@ document.addEventListener('deviceready', function() {
     })
     .catch(error => console.error('Erro ao buscar cupcakes:', error));
 });
+
