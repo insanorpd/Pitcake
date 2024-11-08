@@ -12,11 +12,11 @@ function favoritar(icon) {
     if (icon.classList.contains('ri-heart-3-line')) {
         icon.classList.remove('ri-heart-3-line');
         icon.classList.add('ri-heart-3-fill');
-        console.log('Foi Favoritado!!');
+        //console.log('Foi Favoritado!!');
     } else {
         icon.classList.remove('ri-heart-3-fill');
         icon.classList.add('ri-heart-3-line');
-        console.log('não é mais favorito ÚnÙ');
+        //console.log('não é mais favorito ÚnÙ');
     }
 }
 
